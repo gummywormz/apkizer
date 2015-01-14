@@ -8,9 +8,9 @@ apkizer.sh /path/to/apk.apk /full/output/directory
 
 **Limitations**
 
-aapt must be in your path.
-Mac and Linux only. [JARC-APK 1.3](https://github.com/gummywormz/JARC-APK) will be released to accept command line arguments so you can use that instead.
-Only one extension per directory, since this was designed with Android Studio in mind.
+* aapt must be in your path.
+* Mac and Linux only. [JARC-APK 1.3](https://github.com/gummywormz/JARC-APK) will be released to accept command line arguments so you can use that on Windows.
+* Only one extension per directory, since this was designed with Android Studio in mind.
 
 **Android Studio Template**
 
@@ -21,4 +21,5 @@ Now, go to where you installed Android Studio. On Macs, this is in the executeab
 Navigate to plugins/android/lib/templates/gradle-projects/NewAndroidModule/root/ and replace the build.gradle.ftl file and you should see a task called archondebug. Just run it and you're good to go. (Make sure you have the gradle tab on the side open.)
 
 **License**
+
 Do whatever you want with it...
