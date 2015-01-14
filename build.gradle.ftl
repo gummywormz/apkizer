@@ -78,7 +78,7 @@ dependencies {
 task archonDebug(type: Exec) {
     executable "bash"
     args "--login", "-c", "apkizer.sh '${buildDir}/outputs/apk/app-debug.apk' '${projectDir}' " \
-            + "&& /Users/school/Desktop/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary --load-and-launch-app=${projectDir}/ARChon/"
+            + "&& /Users/##USERNAME##/Desktop/Google\\ Chrome\\ Canary.app/Contents/MacOS/Google\\ Chrome\\ Canary --load-and-launch-app=${projectDir}/ARChon/"
 }
 archonDebug.dependsOn assembleDebug
 </#noparse>
