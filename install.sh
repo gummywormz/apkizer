@@ -8,4 +8,8 @@ cmd="export PATH=\"$DIR:$PATH\""
 echo "$cmd" >> ~/.bash_profile
 source ~/.bash_profile
 chmod +x "./apkizer.sh"
+if [[ -f "./aapt" ]];
+    then
+        chmod +x "./apkizer.sh"
+fi
 echo "Install Successful."
