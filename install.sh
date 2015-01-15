@@ -10,6 +10,6 @@ source ~/.bash_profile
 chmod +x "./apkizer.sh"
 if [[ -f "./aapt" ]];
     then
-        chmod +x "./apkizer.sh"
+        chmod +x "./aapt"
 fi
 echo "Install Successful."
