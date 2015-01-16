@@ -7,9 +7,9 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 cmd="export PATH=\"$DIR:$PATH\""
 echo "$cmd" >> ~/.bash_profile
 source ~/.bash_profile
-chmod +x "./apkizer.sh"
-if [[ -f "./aapt" ]];
+chmod +x "$DIR/apkizer.sh"
+if [[ -f "$DIR/aapt" ]];
     then
-        chmod +x "./aapt"
+        chmod +x "$DIR/aapt"
 fi
 echo "Install Successful."
