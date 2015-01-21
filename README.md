@@ -20,6 +20,21 @@ Replace ##USERNAME## with your account's username. Change the path to apkizer.sh
 Now, go to where you installed Android Studio. On Macs, this is in the executeable itself (right click > show package contents).
 Navigate to plugins/android/lib/templates/gradle-projects/NewAndroidModule/root/ and replace the build.gradle.ftl file and you should see a task called archondebug. Just run it and you're good to go. (Make sure you have the gradle tab on the side open.)
 
+**Windows Users**
+
+Download [JARC-APK 1.3](https://github.com/gummywormz/JARC-APK). 
+
+Open build.gradle.ftl and replace the section under the <noparse> tags with this:
+
+```
+task archonDebug(type: Exec) {
+    executable "cmd"
+    args  "/c", "java -jar path\to\JARC-APK.jar -i '${buildDir}\outputs\apk\app-debug.apk' -o '${projectDir}' " \
+            + "&& path\to\Google Chrome.exe --load-and-launch-app=${projectDir}\${packageName}\"
+}
+archonDebug.dependsOn assembleDebug
+```
+
 **License**
 
 Do whatever you want with it...
